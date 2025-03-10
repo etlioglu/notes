@@ -42,9 +42,8 @@ When you start a `docker container` out of a `docker image`, you will have an is
 from the host, this is by design. In some cases though, you will want to use some data from the host (i.e. FASTQ files).
 You can start a container and at the same time attach a local folder to the container with the following code:
 
-    docker run --name alias_for_the_container -it -v full_path_of_the_folder_within_host:mount_point_within_the_container docker-image-to-be-used
+    docker run -it -v full_path_of_the_folder_within_host:mount_point_within_the_container docker-image-to-be-used
 
-- `--name`: a name for the container to be created
 - `it`: the container is started with the interactive mode so you can work within it
 - `-v`: used to mount/bind a folder from the host to the container
 
