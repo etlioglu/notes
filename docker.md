@@ -48,7 +48,8 @@ You can start a container and at the same time attach a local folder to the cont
 - `it`: the container is started with the interactive mode so you can work within it
 - `-v`: used to mount/bind a folder from the host to the container
 
-After `-v` you need to provide an absolute path of the folder that you would like to connect to, add a `:` and then
-specify a mount point within your container
-The last bit, `docker-image-to-be-used`, specifies the image and its version, for example for the first iamge above, you
-would use `quay.io/comparative-genomics-toolkit/cactus:v2.9.3`. Do not forget to specify the `TAG` at the end.
+The easiest is to navigate to the folder of interest in you host machine and run the `docker run ...` command there:
+
+    docker run -it -v ./:/data/ quay.io/comparative-genomics-toolkit/cactus:v2.9.3
+    
+Do not forget to specify the `TAG` at the end.
