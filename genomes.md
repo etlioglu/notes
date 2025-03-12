@@ -1,8 +1,9 @@
 # Genomes
 
 It is probably better to use a dedicated tool like [refgenie](http://refgenie.databio.org/en/latest/) or the official
-ENSEMBL REST API but this document goes over downloading genomes and annotations from ENSEMBL's FTP server
-https://ftp.ensembl.org/.
+[ENSEMBL REST API](https://rest.ensembl.org/) but this document goes over downloading genomes and annotations from
+[ENSEMBL's FTP server](https://ftp.ensembl.org/) manually. Adapted from
+[here](https://nf-co.re/docs/usage/reference_genomes).
 
 ## Genome
 
